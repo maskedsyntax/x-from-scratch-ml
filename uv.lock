@@ -1441,6 +1441,48 @@ wheels = [
 ]
 
 [[package]]
+name = "mlxtend"
+version = "0.23.4"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.11'",
+]
+dependencies = [
+    { name = "joblib", marker = "python_full_version < '3.11'" },
+    { name = "matplotlib", marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "pandas", marker = "python_full_version < '3.11'" },
+    { name = "scikit-learn", version = "1.7.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "scipy", version = "1.15.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ae/10/6caee09c2375bd5bebb1eec23a6ac3e8e3e3adab4014b8c3033047665583/mlxtend-0.23.4.tar.gz", hash = "sha256:ba8c8427cbe65d462c8487511331cae0cdcf9252d92f8687f0a53d311128770f", size = 1283996, upload-time = "2025-01-26T16:02:45.69Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4c/43/2fc7f76c8891aef148901f1ba3dee65c1cbac00a85ae5ee0dabc2b861256/mlxtend-0.23.4-py3-none-any.whl", hash = "sha256:8675456e2b71841116e5317f6d7aa568848ea2546865eb5eca7192e9b7f395f4", size = 1352350, upload-time = "2025-01-26T16:02:43.208Z" },
+]
+
+[[package]]
+name = "mlxtend"
+version = "0.24.0"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.14'",
+    "python_full_version >= '3.12' and python_full_version < '3.14'",
+    "python_full_version == '3.11.*'",
+]
+dependencies = [
+    { name = "joblib", marker = "python_full_version >= '3.11'" },
+    { name = "matplotlib", marker = "python_full_version >= '3.11'" },
+    { name = "numpy", version = "2.3.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "pandas", marker = "python_full_version >= '3.11'" },
+    { name = "scikit-learn", version = "1.8.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "scipy", version = "1.16.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5d/70/e46748def930f1797c27b6670d36f5d1e044cd8961508960acb303cf730f/mlxtend-0.24.0.tar.gz", hash = "sha256:594f124539d84c3a86951715e16656abfc3005f5da7d3a56b53c77d28d5263f8", size = 1284845, upload-time = "2025-12-13T22:33:16.784Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a9/f9/f62b6c3bd08e1269d9bca9aabe0d990a7c3ffbfbcc495135ad0b59ce860b/mlxtend-0.24.0-py3-none-any.whl", hash = "sha256:2cd15e94360f0c693c8c042a98698d18b03557ab47a7549524c2b354dd8e17d1", size = 1353329, upload-time = "2025-12-13T22:33:15.279Z" },
+]
+
+[[package]]
 name = "narwhals"
 version = "2.14.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2632,6 +2674,21 @@ wheels = [
 ]
 
 [[package]]
+name = "seaborn"
+version = "0.13.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.3.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "pandas" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/86/59/a451d7420a77ab0b98f7affa3a1d78a313d2f7281a57afb1a34bae8ab412/seaborn-0.13.2.tar.gz", hash = "sha256:93e60a40988f4d65e9f4885df477e2fdaff6b73a9ded434c1ab356dd57eefff7", size = 1457696, upload-time = "2024-01-25T13:21:52.551Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl", hash = "sha256:636f8336facf092165e27924f223d3c62ca560b1f2bb5dff7ab7fad265361987", size = 294914, upload-time = "2024-01-25T13:21:49.598Z" },
+]
+
+[[package]]
 name = "send2trash"
 version = "1.8.3"
 source = { registry = "https://pypi.org/simple" }
@@ -2904,6 +2961,8 @@ dependencies = [
     { name = "jupyter" },
     { name = "kagglehub" },
     { name = "matplotlib" },
+    { name = "mlxtend", version = "0.23.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "mlxtend", version = "0.24.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "nbformat" },
     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "numpy", version = "2.3.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -2912,6 +2971,7 @@ dependencies = [
     { name = "plotly" },
     { name = "scikit-learn", version = "1.7.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "scikit-learn", version = "1.8.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "seaborn" },
 ]
 
 [package.metadata]
@@ -2920,10 +2980,12 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "kagglehub", specifier = ">=0.3.13" },
     { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "mlxtend", specifier = ">=0.23.4" },
     { name = "nbformat", specifier = ">=5.10.4" },
     { name = "numpy", specifier = ">=2.2.6" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "pandas-stubs", specifier = "~=2.3.3" },
     { name = "plotly", specifier = ">=6.5.0" },
     { name = "scikit-learn", specifier = ">=1.7.2" },
+    { name = "seaborn", specifier = ">=0.13.2" },
 ]

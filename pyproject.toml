@@ -9,10 +9,12 @@ dependencies = [
     "jupyter>=1.1.1",
     "kagglehub>=0.3.13",
     "matplotlib>=3.10.8",
+    "mlxtend>=0.23.4",
     "nbformat>=5.10.4",
     "numpy>=2.2.6",
     "pandas>=2.3.3",
     "pandas-stubs~=2.3.3",
     "plotly>=6.5.0",
     "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
 ]
